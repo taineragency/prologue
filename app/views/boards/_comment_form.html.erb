@@ -1,0 +1,10 @@
+
+<%= form_for comment do |f| %>
+	<div class="form-group">
+		<%= f.text_field :name, class: 'recommend001' %>
+	</div>
+	<div class="form-group">
+		<%= f.text_area :comment, class: 'recommend002', rows: 4 %>
+	</div>
+	<%= f.submit '送信', class: 'btn btn-recommend' %>
+<% end %>

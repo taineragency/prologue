@@ -1,0 +1,98 @@
+.search-front{
+	height: 1480px;
+	position: relative;
+}
+.search-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 380px;
+	width: 100%;
+	background-color: #F29B75;
+	text-align: center;
+}
+.search-bg h2{
+	position: absolute;
+	top: 200px;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+	height: 30px;
+	color: #FFF;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 26px;
+}
+.reg-board{
+	position: absolute;
+	z-index: 5;
+	top:330px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 1130px;
+	width: 100%;
+}
+.reg-board-inner{
+	height: 960px;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.reg-list{
+	height: 120px;
+	width: 100%;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.reg-list img{
+	height: 90px;
+	width: 90px;
+	padding: 15px;
+}
+.reg-list h2{
+	display: block;
+	line-height: 120px;
+	width: calc(50% - 90px);
+	color: #464B5D;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 22px;
+	padding-left: 30px;
+}
+.reg-list span .reg-prof{
+	display: block;
+	vertical-align: middle;
+	height: 120px;
+	width: calc(50% - 60px);
+	color: #464B5D;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 16px;
+}
+.reg-paginate{
+	height: 150px;
+	width: 100%;
+	background-color: #618DD8;
+	text-align: center;
+}
+.reg-paginate ul{
+	line-height: 150px;
+	width: 100%;
+}
+.reg-paginate li{
+	display: inline-block;
+	height: 30px;
+	width: 50px;
+}
+.reg-paginate li a{
+	color: #FFF;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+

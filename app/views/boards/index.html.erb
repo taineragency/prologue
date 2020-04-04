@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prologue</title>
+    <meta charset="utf-8">
+    <meta name="description" content="私たちテイナーは、あらゆるクリエイティブに楽しさを付与し、多くのプロモーションを担うクリエイティブエージェンシーです。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="デザイン,撮影,ライブ配信,ライバー,オーガナイザー" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="top" class="front">
+        <div class="main-catch">
+            <%= render partial: 'boards/menubar' %>
+            <div class="mv-top">
+                <img src="/assets/DSC38922@2x.png">
+            </div>
+            <div class="mv-bg">
+                <img src="/assets/DSC29422@2x.png">
+            </div>
+        </div>
+        <div class="main-board">
+            <div class="left-board">
+                <div class="shape001"><img src="/assets/DSC93842@2x.png"></div>
+                <div class="shape002"><img src="/assets/DSC89283@2x.png"></div>
+                <div class="shape003"><img src="/assets/DSC74794@2x.png"></div>
+                <div class="menu-board">
+                    <a href="#" class="menu001">How</a>
+                    <a href="#" class="menu002">To</a>
+                    <a href="#" class="menu003">Use</a>
+                </div>
+            </div>
+            <div class="right-board">
+                <div class="shape101"><img src="/assets/DSC49793@2x.png"></div>
+                <div class="icon201"><img src="/assets/DSC75849@2x.png"></div>
+                <div class="icon202"><img src="/assets/DSC99868@2x.png"></div>
+                <div class="msgbox">
+                    <h1>撮影をプレゼントしよう！</h1>
+                    <div class="msg001">
+                        <p>プロローグは応援する人に、撮影体験をプレゼントできるギフトサービスです。</p>
+                        <p>この素晴らしきインターネット時代、自らを表す媒体は多く存在し、そのどれもに写真が使わ</p>
+                        <p>れています。プロフィール、背景バナー、宣材写真。</p>
+                    </div>
+                    <div class="msg002">
+                        <p>プロローグを使えば、あなたの応援する人に撮影をプレゼントし、</p>
+                        <p>あなた自身もそこで撮られた写真を受け取ることができます。</p>
+                    </div>
+                    <div class="msg001-rp">
+                        <p>プロローグは応援する人に、撮影体験をプレゼント</p>
+                        <p>できるギフトサービスです。</p>
+                        <p>この素晴らしきインターネット時代、自らを表す</p>
+                        <p>媒体は多く存在し、そのどれもに写真が使われて</p>
+                        <p>います。プロフィール、背景バナー、宣材写真。</p>
+                    </div>
+                    <div class="msg002-rp">
+                        <p>プロローグを使えば、あなたの応援する</p>
+                        <p>人に撮影をプレゼントし、あなた自身も</p>
+                        <p>そこで撮られた写真を受け取ることができます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-board">
+            <div class="search-001">
+                <div class="s-title">
+                    <h2>User</h2>
+                    <h3>撮影であの人にエールを</h3>
+                </div>
+                <div class="shape201"><img src="/assets/DSC34235@2x.png"></div>
+            </div>.
+            <div class="search-002">
+                <% @boards.each do |board| %>
+                    <div class="s-join">
+                        <%= link_to image_tag('/assets/DSC48723@2x.png'), board %>
+                        <%= board.name %>
+                    </div>
+                <% end %>
+                <div class="s-join">
+                    <%= link_to image_tag('/assets/DSC37822@2x.png'), new_user_path, class: 'login' %>
+                    <p>Join!</p>
+                </div>
+            </div>
+            <!--
+            <div class="search-003">
+                <div class="s-present">
+                    <a href="#"><img src="/assets/DSC32759@2x.png"></a>
+                </div>
+            </div>
+        -->
+        </div>
+        <div class="ov-board">
+            <div class="ov-board-inner">
+                <div class="ov001">
+                    <img src="/assets/DSC38883@2x.png">
+                    <p>応援したい人の</p>
+                    <p>プロフィールにアクセス</p>
+                </div>
+                <div class="ov002">
+                    <img src="/assets/DSC38883@2x.png">
+                    <p>撮影ギフトを</p>
+                    <p>プレゼント</p>
+                </div>
+                <div class="ov003">
+                    <img src="/assets/DSC38883@2x.png">
+                    <p>応援している人が</p>
+                    <p>活躍できる写真を撮影</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-frame">
+            <div class="shape400"><img src="/assets/DSC36662@2x.png"></div>
+            <div class="copyright">
+                <span>Organized by</span>
+                <a href="https://tainer.co.jp">TainerAgency inc.</a>
+                <p>©︎ 2019-2020 TainerAgency inc.</p>
+                <p>All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

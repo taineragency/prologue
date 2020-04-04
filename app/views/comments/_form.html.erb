@@ -1,0 +1,11 @@
+<%= form_for @comment do |f| %>
+    <div class="fome-group">
+        <%= f.text_field :name, class: 'name-field', :placeholder => "名前を入力" %>
+    </div>
+    <div class="fome-group">
+        <%= f.text_area :comment, class: 'comment-field', rows: 10, :placeholder => "推薦コメントを書く" %>
+        <div class="post-field">
+            <%= f.submit 'プロフィールを更新', class: 'btn btn-post' %>
+        </div>
+    </div>
+<% end %>

@@ -1,0 +1,67 @@
+<div class="top-menu-bar">
+    <div class="menu-bar-l">
+        <a href="/boards" class="top-logo"><img src="/assets/DSC23832@2x.png"></a>
+    </div>
+    <div class="menu-bar-menu"><i class="fas fa-bars"></i></div>
+    <div class="menu-bar-r">
+        <a href="/boards/new" class="menu-bar-001">About</a>
+        <a href="/boards/search" class="menu-bar-002">search</a>
+        <a href="#" class="menu-bar-003">How to</a>
+        <div class="login-field">
+        	<% if @current_user %>
+        		<div class="me-icon"><img src="/assets/DSC48723@2x.png"></div>
+	        	<div class="dropdown">
+	        		<ul>
+		        		<li><a href="#" class="my-dropdown-item"><%= @current_user.name %></a></li>
+		        		<li><%= link_to 'プロフィールを編集', mypage_path, class: 'my-dropdown-item' %></li>
+		        		<li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'my-dropdown-item' %></li>
+		        	</ul>
+	        	</div>
+			<% else %>
+				<a href="#" class="login"><img src="/assets/DSC47827@2x.png"></a>
+        		<p>Login</p>
+			<!--
+				<%= link_to '登録', new_user_path, class: 'dropdown-item' %>
+				<%= link_to 'ログイン', root_path, class: 'dropdown-item' %>
+			-->
+			<% end %>
+        </div>
+        <div class="login-modal js-modal">
+            <div class="login-modal-bg js-modal-close"></div>
+            <div class="login-modal-content">
+            	<div class="board-t">
+					<h2>ログイン</h2>
+					<div class="shape1000"></div>
+			    </div>
+			    <div class="board-m">
+            	<%= form_for(:session, method: :post, url: login_path) do |f| %>
+			        <div class="form-group">
+			          <%= f.label :name, 'ユーザー名' %>
+			          <%= f.text_field :name, class: 'form-control' %>
+			        </div>  
+			        <div class="form-group">
+			          <%= f.label :password_digest, 'パスワード' %>
+			          <%= f.password_field :password_digest, class: 'form-control' %>
+			        </div>
+			        <%= f.submit 'ログイン', class: 'btn btn-primary' %>
+			    <% end %>
+				</div>
+			    <!--
+                <div class="login-a">
+                    <div class="shape500"></div>
+                    <h2>プロローグへログインしましょう!</h2>
+                </div>
+                <div class="login-b">
+                    <p>ソーシャルアカウントでログイン</p>
+                    <a href="boards/show"  class="twitter-login">
+                        <i class="fab fa-twitter fa-lg"></i>
+                        <p>Twitter</p>
+                    </a>
+                    <a href="#" class="kiyaku">利用規約</a>
+                </div>
+                <a class="js-modal-close" href=""><img src="/assets/DSC88838@2x.png"></a>
+            -->
+            </div>
+        </div>
+    </div>
+</div>

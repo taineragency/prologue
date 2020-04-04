@@ -1,0 +1,229 @@
+
+/*------------------------ edit -----------------------------*/
+.edit-frame{
+	position: relative;
+	height: 100vh;
+}
+.edit-l{
+	position: absolute;
+	top: 0;
+	left:0;
+	height:900px;
+	width: 20%;
+	background-color: #618DD8;
+}
+.edit-l-inner{
+	position: relative;
+	height: 50.7vh;
+	width: 100%;
+	background : linear-gradient(90deg, #000 1.5px, transparent 0),linear-gradient(0deg, #000 1.5px, transparent 0);
+	background-color: #618DD8;
+	background-size: 25px 25px;
+}
+.menu-brock{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 332px;
+	width: 215px;
+	background-color: #000;
+}
+.menu-logo{
+	height: 156px;
+	width: 215px;
+}
+.menu-logo img{
+	height: 90px;
+	width: 141px;
+	padding: 33px 37px;
+	margin: 0 auto;
+}
+.edit-menu-bar{
+	height: 176px;
+	width: 215px;
+	align-items: center;
+	flex-wrap: wrap;
+	text-decoration: none;
+}
+.edit-menu-001,.edit-menu-002,.edit-menu-003{
+	display: block;
+	height: 44px;
+	width: 175px;
+	padding:0 20px;
+	text-decoration: none;
+	color:#FFF;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 16px;
+}
+.edit-menu-004,.edit-menu-004 img{
+	display: block;
+	height: 44px;
+	width: 215px;
+	text-decoration: none;
+	color:#FFF;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 16px;
+}
+.edit-menu-004{
+	position: relative;
+}
+.edit-menu-004 img{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.edit-menu-004 p{
+	position: absolute;
+	top: 0;
+	bottom:0;
+	left: 20px;
+	height: 18px;
+	margin: auto;
+}
+.shape-area{
+	height: 100px;
+	width: 100%;
+}
+.shape310{
+	position: absolute;
+	top: 500px;
+	left: 0;
+}
+.shape320{
+	position: absolute;
+	top: 530px;
+	left: 0;
+}
+.shape330{
+	position: absolute;
+	top: 560px;
+	left: 0;
+}
+.shape310 img,.shape320 img,.shape330 img{
+	width: 80%;
+}
+.edit-r{
+	position: absolute;
+	top: 0;
+	left: 20%;
+	height: 900px;
+	width: 80%;
+	background-color: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.edit-prof-a{
+	height: calc(100% - 40px);
+	width: 200px;
+	padding: 20px 10px;
+	display: inline-block;
+}
+.edit-icon{
+	height: 180px;
+	width: 180px;
+	margin: 0 10px;
+}
+.edit-icon img{
+	height: 180px;
+	width: 180px;
+}
+.edit-prof-b{
+	height: calc(100% - 40px);
+	width: calc(100% - 220px);
+	padding: 20px 0;
+}
+.input-area{
+	width: calc(100% - 20%);
+	margin-right: 20%;
+	margin-bottom: 50px;
+}
+.profile-area{
+	height: 320px;
+	width: 660px;
+	border-radius: 10px;
+	border:2px solid #E9E9E9;
+}
+.update-area{
+	height: 80px;
+	width: calc(100% - 20%);
+	margin: 60px 0;
+	padding: 0 10%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.btn-update{
+	height: 80px;
+	width: 316px;
+	background-color: #FD9D78;
+	color: #FFF;
+	border-radius: 10px;
+	border:none;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 20px;
+	color: #FFF;
+}
+.cancel{
+	display: inline-block;
+	line-height: 80px;
+	width: 220px;
+	background-color: #9C9C9C;
+	border-radius: 10px;
+	color:#FFF;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 20px;
+	margin-right: 40px;
+	text-align: center;
+	text-decoration: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/*  HTML5 display-role reset for older browsers 
+*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+font-family: "Josefin Sans";
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}

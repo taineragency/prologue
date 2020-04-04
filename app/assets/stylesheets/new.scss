@@ -1,0 +1,134 @@
+
+body{
+	background-color: #F8F8F8;
+	overflow-x: hidden;
+}
+
+/*------------------------ new -----------------------------*/
+
+.new-frame{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: #3C6BBC;
+}
+.board{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 656px;
+	width: 656px;
+	background-color: #FFF;
+}
+.board-t{
+	line-height: 105px;
+	width: calc(100% - 10%);
+	padding-left: 10%; 
+	margin-bottom: 30px;
+}
+.board-t h2{
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color:#131314;
+}
+.shape1000{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 105px;
+	width: 200px;
+	background : radial-gradient(#618DD8 15%, transparent 20%);
+	opacity: 0.4;
+	background-size:12px 12px;
+}
+.board-m{
+	width: calc(100% - 20%);
+	padding: 0 10%;
+}
+.form-group{
+	width: calc(100% - 10%);
+	padding: 0 5%;
+	margin-bottom: 15px;
+}
+.form-group label{
+	display:block;
+	width: 100%;
+	text-align: left;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 16px;
+	color: #787878;
+	margin-bottom: 15px;
+}
+.form-control{
+	height: 62px;
+	width: 420px;
+	border:2px solid #E9E9E9;
+	border-radius: 10px;
+}
+.form-control:last{
+	height: 320px;
+	width: 80%;
+}
+.btn-primary{
+	height: 80px;
+	width: 520px;
+	background-color: #FD9D78;
+	color: #FFF;
+	border-radius: 10px;
+	border:none;
+	margin-top: 15px;
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 20px;
+	color: #FFF;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/*  HTML5 display-role reset for older browsers 
+*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+font-family: "Josefin Sans";
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}

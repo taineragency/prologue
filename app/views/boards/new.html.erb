@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新規登録 | Prologue</title>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/new.scss">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="new-frame">
+        	<div class="board">
+        		<div class="board-t">
+        			<h2>プロローグに新規登録</h2>
+        			<div class="shape1000"></div>
+        		</div>
+        		<div class="board-m">
+        			<% if flash[:error_messages] %>
+        				<div class="alert alert-danger">
+        					<ul>
+        						<% flash[:error_messages].each do |msg| %>
+        						<li><%= msg %></li>
+        						<% end %>
+        					</ul>
+        				</div>
+        			<% end %>
+        			<%= form_for @board do |f| %>
+                		<div class="form-group">
+                            <%= f.label :name, 'ユーザー名' %>
+                            <%= f.text_field :name, class: 'form-control' %>
+                        </div>
+                        <div class="form-group">
+                            <%= f.label :password, 'パスワード' %>
+                            <%= f.password_field :password, class: 'form-control' %>
+                        </div>
+                        <div class="form-group">
+                            <%= f.label :password_confirmation, 'パスワード（確認）' %>
+                            <%= f.password_field :password_confirmation, class: 'form-control' %>
+                        </div>
+                        <%= f.submit 'さっそくはじめる', class: 'btn btn-primary' %>
+                	<% end %>
+        		</div>
+        		<div class="board-u"></div>
+        	</div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

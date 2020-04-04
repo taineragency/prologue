@@ -1,0 +1,33 @@
+<div class="new-frame">
+	<div class="board">
+		<div class="board-t">
+			<h2>ログイン</h2>
+			<div class="shape1000"></div>
+		</div>
+		<div class="board-m">
+			<% if flash[:error_messages] %>
+				<div class="alert alert-danger">
+					<ul>
+						<% flash[:error_messages].each do |msg| %>
+						<li><%= msg %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
+			<%= form_for(:session, method: :post, url: login_path) do |f| %>
+				<div class="form-group">
+					<%= f.label :name, 'ユーザー名' %>
+					<%= f.text_field :name, class: 'form-control' %>
+				</div>  
+				<div class="form-group">
+					<%= f.label :password_digest, 'パスワード' %>
+					<%= f.password_field :password_digest, class: 'form-control' %>
+				</div>
+				<%= f.submit 'ログイン', class: 'btn btn-primary' %>
+			<% end %>
+		</div>
+		<div class="board-u">
+			<a href="#" class="新規登録"></a>
+		</div>
+	</div>
+</div>

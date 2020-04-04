@@ -1,0 +1,20 @@
+<div class="new-frame">
+	<div class="board">
+		<div class="board-t">
+			<h2>プロローグに新規登録</h2>
+			<div class="shape1000"></div>
+		</div>
+		<div class="board-m">
+			<% if flash[:error_messages] %>
+				<div class="alert alert-danger">
+					<ul>
+						<% flash[:error_messages].each do |msg| %>
+						<li><%= msg %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
+			<%= render partial: 'form', locals: { user: @user} %>
+		</div>
+	</div>
+</div>

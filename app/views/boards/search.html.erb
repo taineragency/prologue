@@ -1,0 +1,31 @@
+<div class="search-front">
+    <div class="main-catch">
+        <%= render partial: 'boards/menubar' %>
+        <div class="search-bg">
+        	<h2>エールを送りたい配信者を探す</h2>
+        </div>
+    </div>
+    <div class="reg-board">
+    	<div class="reg-board-inner">
+    		<% @boards.each do |board| %>
+	            <div class="reg-list">
+	                <%= link_to image_tag('/assets/DSC48723@2x.png'), board %>
+	                <h2><%= board.name %></h2>
+	                <span class="reg-prof"><%= simple_format(board.profile) %></span>
+	            </div>
+	        <% end %>
+    	</div>
+    	<div class="reg-paginate">
+	        <%= paginate @boards %>
+	    </div>
+    </div>
+</div>
+<div class="footer-frame">
+    <div class="shape400"><img src="/assets/DSC36662@2x.png"></div>
+    <div class="copyright">
+        <span>Organized by</span>
+        <a href="https://tainer.co.jp">TainerAgency inc.</a>
+        <p>©︎ 2019-2020 TainerAgency inc.</p>
+        <p>All Rights Reserved.</p>
+    </div>
+</div>

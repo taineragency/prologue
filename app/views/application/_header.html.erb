@@ -1,0 +1,43 @@
+<div class="new-frame">
+	<div class="board">
+		<div class="board-t">
+			<h2>プロローグに登録</h2>
+			<div class="shape1000"></div>
+		</div>
+		<div class="board-m">
+			<% if flash[:error_messages] %>
+				<div class="alert alert-danger">
+					<ul>
+						<% flash[:error_messages].each do |msg| %>
+						<li><%= msg %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
+			<%= form_for @board do |f| %>
+        		<div class="form-group">
+                    <%= f.label :name, '名前' %>
+                    <%= f.text_field :name, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :email, 'メールアドレス' %>
+                    <%= f.text_field :email, class: 'form-control' %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :profile, 'パスワード' %>
+                    <%= f.text_area :profile, class: 'form-control', rows: 10 %>
+                </div>
+                <%= f.submit 'さっそくはじめる', class: 'btn btn-primary' %>
+        	<% end %>
+		</div>
+		<div class="board-u">
+			<% if @current_user %>
+				<%= link_to 'マイページ', mypage_path, class: 'dropdown-item' %>
+				<%= link_to 'ログアウト', logout_path, method: :derete, class: 'dropdown-item' %>
+			<% else %>
+			<%= link_to '登録', new_user_path, class: 'dropdown-item' %>
+			<%= link_to 'ログイン', root_path, class: 'dropdown-item' %>
+			<% end %>
+		</div>
+	</div>
+</div>
