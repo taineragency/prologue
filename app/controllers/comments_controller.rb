@@ -2,11 +2,12 @@ class CommentsController < ApplicationController
   def create
   	comment = Comment.new(comment_params)
   	if comment.save
+      flash[:notice] = '推薦コメントを投稿しました！'
   		redirect_to comment.board
   	else
   		redirect_to :back, flash: {
   			comment: comment,
-  			error_mesasges: comment.errors.full_messages
+  			error_messages: comment.errors.full_messages
   		}
   	end
   end
@@ -17,6 +18,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-  	params.require(:comment).permit(:board_name, :name, :comment)
+  	params.require(:comment).permit(:board_id, :name, :comment)
   end
 end

@@ -15,15 +15,33 @@
     <body>
         <div class="md-frame">
             <div class="md-l">
-                <%= render partial: 'boards/side_menubar' %>
+                <div class="md-l-inner">
+                    <div class="menu-brock">
+                        <a href="/boards" class="menu-logo"><img src="/assets/favicon@2x.png"></a>
+                        <div class="md-menu-bar">
+                            <a href="search.html" class="md-menu-001">About</a>
+                            <a href="#" class="md-menu-002">Member</a>
+                            <a href="#" class="md-menu-003">How to</a>
+                            <a href="#" class="md-menu-004">
+                                <img src="/assets/DSC47233@2x.png">
+                                <p>Login</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-area">
+                    <span class="shape310"><img src="/assets/DSC42989@2x.png"></span>
+                    <span class="shape320"><img src="/assets/DSC42989@2x.png"></span>
+                    <span class="shape330"><img src="/assets/DSC42989@2x.png"></span>
+                </div>
             </div>
             <div class="md-m">
                 <div class="md-prof-a">
                     <div class="md-icon">
                         <img src="/assets/DSC48723@2x.png">
-                        <% if @current_user == @board %>
+                        <% if @current_user  %>
                         <%= link_to 'マイページを編集する', edit_board_path(@board), class: 'edit-link' %>
-                        <% end %>
+                    	<% end %>
                     </div>
                     <div class="md-name">
                         <h2><%= @board.name %></h2>
@@ -41,26 +59,12 @@
                     <div class="md-profile">
                         <h2>Profile</h2>
                         <div class="md-chara">
-                            <p><%= safe_join(@board.profile.to_s.split("\n"),tag(:br)) %></p>
+                            <p><%= simple_format(@board.profile) %></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="md-r">
-                <div class="md-r-inner">
-                    <div class="md-r-line"><p>推薦コメント</p></div>
-                    <ul class="recommend-area">
-                        <%= render @board.comments %>
-                    </ul>
-                    <div class="recommend-on">
-                        <img src="/assets/DSC37894@2x.png">
-                        <div class="markup">
-                            <div class="markup-inner">
-                                <%= render partial: 'comment_form' , locals: {comment: @comment} %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     <script src="script.js"></script>

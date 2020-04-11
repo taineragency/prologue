@@ -13,17 +13,13 @@
 	        	<div class="dropdown">
 	        		<ul>
 		        		<li><a href="#" class="my-dropdown-item"><%= @current_user.name %></a></li>
-		        		<li><%= link_to 'プロフィールを編集', mypage_path, class: 'my-dropdown-item' %></li>
+		        		<li><%= link_to 'プロフィールを編集', board_path(@current_user.id), class: 'my-dropdown-item' %></li>
 		        		<li><%= link_to 'ログアウト', logout_path, method: :delete, class: 'my-dropdown-item' %></li>
 		        	</ul>
 	        	</div>
 			<% else %>
-				<a href="#" class="login"><img src="/assets/DSC47827@2x.png"></a>
+				<a href="/boards/login" class="login"><img src="/assets/DSC47827@2x.png"></a>
         		<p>Login</p>
-			<!--
-				<%= link_to '登録', new_user_path, class: 'dropdown-item' %>
-				<%= link_to 'ログイン', root_path, class: 'dropdown-item' %>
-			-->
 			<% end %>
         </div>
         <div class="login-modal js-modal">
@@ -46,7 +42,6 @@
 			        <%= f.submit 'ログイン', class: 'btn btn-primary' %>
 			    <% end %>
 				</div>
-			    <!--
                 <div class="login-a">
                     <div class="shape500"></div>
                     <h2>プロローグへログインしましょう!</h2>

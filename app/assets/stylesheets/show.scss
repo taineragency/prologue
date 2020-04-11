@@ -27,13 +27,15 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	height: 332px;
-	width: 215px;
+	height: 336px;
+	width: 80%;
 	background-color: #000;
+	display: inline-block;
 }
 .menu-logo{
 	height: 156px;
 	width: 215px;
+	display: block;
 }
 .menu-logo img{
 	height: 90px;
@@ -41,47 +43,44 @@
 	padding: 33px 37px;
 	margin: 0 auto;
 }
-.md-menu-bar{
-	height: 176px;
-	width: 215px;
+ul.md-menu-bar{
+	height: 180px;
+	width: 100%;
 	align-items: center;
 	flex-wrap: wrap;
 	text-decoration: none;
 }
-.md-menu-001,.md-menu-002,.md-menu-003{
-	display: block;
+ul.md-menu-bar li{
 	height: 44px;
-	width: 175px;
+}
+.md-menu-001,.md-menu-002,.md-menu-003,.md-menu-004{
+	display: block;
+	line-height: 44px;
+	width: calc(100% - 40px);
 	padding:0 20px;
 	text-decoration: none;
 	color:#FFF;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-	font-size: 16px;
-}
-.md-menu-004,.md-menu-004 img{
-	display: block;
-	height: 44px;
-	width: 215px;
-	text-decoration: none;
-	color:#FFF;
-	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 .md-menu-004{
-	position: relative;
-}
-.md-menu-004 img{
 	position: absolute;
 	top:0;
 	left: 0;
+	z-index: 1;
+	line-height: 48px;
 }
-.md-menu-004 p{
+ul.md-menu-bar li:last-child{
+	position: relative;
+	height: 48px;
+}
+ul.md-menu-bar li:last-child img{
 	position: absolute;
-	top: 0;
-	bottom:0;
-	left: 20px;
-	height: 18px;
-	margin: auto;
+	top:0;
+	left: 0;
+	height: 44px;
+	width: calc(100% - 4px);
+	padding: 2px;
 }
 .shape-area{
 	height: 100px;
@@ -178,7 +177,7 @@
 }
 .md-prof-b{
 	position: relative;
-	height: 180px;
+	height: calc(100vh - 260px);
 	width: 100%;
 	padding: 20px 0;
 }
@@ -195,9 +194,9 @@
 .md-profile{
 	position: absolute;
 	top: 30px;
-	left: 50px;
-	height: 150px;
-	width: 80%;
+	height: 480px;
+	width: calc(100% - 50px);
+	padding-left: 50px;
 }
 .md-profile h2{
 	color: #131314;
@@ -205,18 +204,28 @@
 	font-size: 24px;
 	font-weight: bold;
 	height: 28px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .md-chara{
-	height: 102px;
+	height: 442px;
 	width: 100%;
+	overflow: auto;
+}
+.md-chara.deco::-webkit-scrollbar {
+    width: 15px;
+}
+.md-chara.deco::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #f2f2f2;
+}
+.md-chara.deco::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background:#09C9D9;
 }
 .md-chara p{
 	color: #464B5D;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 16px;
-	height: 18px;
-	margin-bottom: 10px;
 }
 .md-r{
 	position: absolute;
@@ -262,18 +271,34 @@
 	color:#363637;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 16px;
-	font-weight: bold;
 	border:none;
 	border-bottom:2px solid #A5A5A5;
+	outline: 0;
+}
+::placeholder{
+	color:#787878;
+	opacity: 0.6;
 }
 .recommend002{
-	height: 200px;
+	height: 180px;
 	width: 100%;
 	color:#787878;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 15px;
 	border:none;
 	resize: none;
+	outline: 0;
+}
+.counter-box{
+	height: 24px;
+	width: 50px;
+	margin-left: 170px; 
+}
+#counter{
+	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color:#787878;
 }
 .btn-recommend{
 	position: absolute;

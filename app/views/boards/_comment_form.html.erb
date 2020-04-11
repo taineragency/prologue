@@ -1,10 +1,14 @@
 
 <%= form_for comment do |f| %>
+	<%= f.hidden_field :board_id %>
 	<div class="form-group">
-		<%= f.text_field :name, class: 'recommend001' %>
+		<%= f.text_field :name, class: 'recommend001', :placeholder => "名前" %>
 	</div>
 	<div class="form-group">
-		<%= f.text_area :comment, class: 'recommend002', rows: 4 %>
+		<%= f.text_area :comment, class: 'recommend002', id: "input-text", :placeholder => "推薦コメントを書く" %>
+	</div>
+	<div class="counter-box">
+		<p id="counter">140/140</p>
 	</div>
 	<%= f.submit '送信', class: 'btn btn-recommend' %>
 <% end %>

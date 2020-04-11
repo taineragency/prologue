@@ -14,25 +14,7 @@
     <body>
         <div class="edit-frame">
             <div class="edit-l">
-                <div class="edit-l-inner">
-                    <div class="menu-brock">
-                        <a href="/boards" class="menu-logo"><img src="/assets/favicon@2x.png"></a>
-                        <div class="edit-menu-bar">
-                            <a href="#" class="edit-menu-001">About</a>
-                            <a href="#" class="edit-menu-002">Member</a>
-                            <a href="#" class="edit-menu-003">How to</a>
-                            <a href="#" class="edit-menu-004">
-                                <img src="/assets/DSC47233@2x.png">
-                                <p>Login</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-area">
-                    <span class="shape310"><img src="/assets/DSC42989@2x.png"></span>
-                    <span class="shape320"><img src="/assets/DSC42989@2x.png"></span>
-                    <span class="shape330"><img src="/assets/DSC42989@2x.png"></span>
-                </div>
+                <%= render partial: 'boards/side_menubar' %>
             </div>
             <div class="edit-r">
                 <div class="edit-prof-a">
@@ -42,15 +24,15 @@
                     <div class="input-area">
                     	<%= form_for @board do |f| %>
 	                		<div class="form-group">
-	                            <%= f.label :name, '名前' %>
+	                            <%= f.label :name, '名前', class: 'edit-form-name' %>
 	                            <%= f.text_field :name, class: 'form-control' %>
 	                        </div>
 	                        <div class="form-group">
-	                            <%= f.label :email, 'メールアドレス' %>
+	                            <%= f.label :email, 'メールアドレス', class: 'edit-form-name' %>
 	                            <%= f.text_field :email, class: 'form-control' %>
 	                        </div>
 	                        <div class="form-group">
-	                            <%= f.label :profile, 'プロフィール' %>
+	                            <%= f.label :profile, 'プロフィール', class: 'edit-form-name' %>
 	                            <%= f.text_area :profile, class: 'profile-area', rows: 10 %>
 	                        </div>
 	                        <div class="update-area">

@@ -2,10 +2,10 @@ class SessionsController < ApplicationController
   def create
     board = Board.find_by(name: params[:session][:name])
     if board && board.authenticate(params[:session][:password])
-      session[:board_name] = board.name
+      session[:board_id] = board.id
       redirect_to mypage_path
     else
-      render 'home/index'
+      render 'boards/login'
     end
   end
 

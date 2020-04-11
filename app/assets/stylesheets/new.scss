@@ -48,6 +48,7 @@ body{
 .board-m{
 	width: calc(100% - 20%);
 	padding: 0 10%;
+	text-align: center;
 }
 .form-group{
 	width: calc(100% - 10%);
@@ -56,12 +57,12 @@ body{
 }
 .form-group label{
 	display:block;
-	width: 100%;
+	width: 426px;
 	text-align: left;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 16px;
 	color: #787878;
-	margin-bottom: 15px;
+	margin:0 auto 15px;
 }
 .form-control{
 	height: 62px;

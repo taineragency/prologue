@@ -1,8 +1,8 @@
 class BoardsController < ApplicationController
-	before_action :set_target_board,only: %i[show edit update]
+	before_action :set_target_board, only: %i[show edit update destroy]
 
   def index 
-  	@boards = Board.order("RAND()").limit(13)
+  	@boards = Board.order("RAND()").limit(14)
   end
 
   def new
@@ -24,23 +24,27 @@ class BoardsController < ApplicationController
   end
 
   def show
-  	@board = Board.find(params[:id])
   	@comment = Comment.new(board_id: @board.id)
   end
 
   def edit 
-  	@board = Board.find(params[:id])
   end
 
   def search
   	@boards = Board.page(params[:page]).per(7)
-  end
-
-  def me
+  	@comment = Comment.all
   end
 
   def update
-  	board = Board.find(params[:id])
+  	@board.update(board_params)
+
+  	redirect_to board_path
+  end
+
+  def destroy
+  	@board.delete
+
+  	redirect_to board_path, flash: { notice: "「#{board.name}」のページが削除されました"} 
   end
 
   private
@@ -50,8 +54,6 @@ class BoardsController < ApplicationController
   end
 
   def board_params
-  	params.require(:board).permit(:name, :password, :password_confirmation)
+  	params.require(:board).permit(:name, :password, :password_confirmation, :email, :profile)
   end
 end
-                                                                       
-

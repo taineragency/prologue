@@ -1,0 +1,24 @@
+<div class="md-l-inner">
+    <div class="menu-brock">
+        <a href="/boards" class="menu-logo"><img src="/assets/favicon@2x.png"></a>
+        <ul class="md-menu-bar">
+            <li><a href="search.html" class="md-menu-001">About</a></li>
+            <li><a href="#" class="md-menu-002">Member</a></li>
+            <li><a href="#" class="md-menu-003">How to</a></li>
+            <li>
+                <% if @current_user == @board %>
+                    <%= link_to 'Login', board_path(@current_user.id), class: 'md-menu-004' %>
+                    <img src="/assets/DSC47233@2x.png">
+                <% else %>
+                    <%= link_to 'Mypage', board_path(@current_user.id), class: 'md-menu-004' %>
+                    <img src="/assets/DSC47233@2x.png">
+                <% end %>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="shape-area">
+    <span class="shape310"><img src="/assets/DSC42989@2x.png"></span>
+    <span class="shape320"><img src="/assets/DSC42989@2x.png"></span>
+    <span class="shape330"><img src="/assets/DSC42989@2x.png"></span>
+</div>
