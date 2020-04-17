@@ -19,8 +19,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: awdxqwikrmlnhi
-  host: ec2-52-86-33-50.compute-1.amazonaws.com
-  database: db/production.postgresql
-  password: 899239b48185fb24ac6a917a22a9963d8bbaff0202a32c6a3c066834430ac68c
   url: <%= ENV['DATABASE_URL'] %>
