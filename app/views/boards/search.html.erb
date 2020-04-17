@@ -11,7 +11,7 @@
 	            <div class="reg-list">
 	                <%= link_to image_tag('/assets/DSC48723@2x.png'), board %>
 	                <h2><%= board.name %></h2>
-	                <span class="reg-prof"><%= simple_format(board.profile) %></span>
+	                <div class="reg-prof"><%= safe_join(board.profile.to_s.split("\n"),tag(:br)) %></div>
 	            </div>
 	        <% end %>
     	</div>

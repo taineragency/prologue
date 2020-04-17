@@ -7,10 +7,10 @@
             <li><a href="#" class="md-menu-003">How to</a></li>
             <li>
                 <% if @current_user == @board %>
-                    <%= link_to 'Login', board_path(@current_user.id), class: 'md-menu-004' %>
+                    <%= link_to 'Mypage', board_path(@current_user.id), class: 'md-menu-004' %>
                     <img src="/assets/DSC47233@2x.png">
                 <% else %>
-                    <%= link_to 'Mypage', board_path(@current_user.id), class: 'md-menu-004' %>
+                    <%= link_to 'Login', boards_login_path, class: 'md-menu-004' %>
                     <img src="/assets/DSC47233@2x.png">
                 <% end %>
             </li>

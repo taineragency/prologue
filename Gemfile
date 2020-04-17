@@ -32,13 +32,14 @@ gem 'bcrypt', '~> 3.1.7'
 #gem 'bootstrap', '~> 4.0.0'
 gem 'kaminari'
 gem 'rails-i18n'
-gem 'carrierwave'
-gem 'rmagick'
 gem 'annotate'
+gem 'dotenv-rails'
+gem 'omniauth-twitter'
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'mysql2', '>= 0.3.18', '< 0.5'
+  gem 'mysql2', '0.4.10'
   gem 'byebug', platform: :mri
   gem 'rails-flog', require: 'flog'
 end

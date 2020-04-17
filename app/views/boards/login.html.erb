@@ -14,7 +14,7 @@
           </ul>
         </div>
       <% end %>
-      <%= form_for(:session, method: :post, url: login_path) do |f| %>
+      <%= form_for(:session, method: :post, url: boards_login_path) do |f| %>
         <div class="form-group">
           <%= f.label :name, 'ユーザー名' %>
           <%= f.text_field :name, class: 'form-control' %>
@@ -25,6 +25,7 @@
         </div>
         <%= f.submit 'ログイン', class: 'btn btn-primary' %>
       <% end %>
+      <%= link_to "login" ,"/auth/twitter", method: :post %>
     </div>
     <div class="board-u">
       <a href="#" class="新規登録"></a>

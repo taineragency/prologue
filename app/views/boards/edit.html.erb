@@ -14,6 +14,7 @@
     <body>
         <div class="edit-frame">
             <div class="edit-l">
+                <%= render partial: 'boards/menubar' %>
                 <%= render partial: 'boards/side_menubar' %>
             </div>
             <div class="edit-r">
@@ -36,8 +37,8 @@
 	                            <%= f.text_area :profile, class: 'profile-area', rows: 10 %>
 	                        </div>
 	                        <div class="update-area">
-		                       <%= link_to 'キャンセル', :back, class: 'cancel' %>
-		                        <%= f.submit 'プロフィールを更新', class: 'btn btn-update' %>
+                                <%= f.submit 'プロフィールを更新', class: 'btn btn-update' %>
+                                <%= link_to 'キャンセル', :back, class: 'cancel' %>
 	                       	</div>
 	                	<% end %>
                     </div>

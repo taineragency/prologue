@@ -1,16 +1,12 @@
 class SessionsController < ApplicationController
   def create
-    board = Board.find_by(name: params[:session][:name])
-    if board && board.authenticate(params[:session][:password])
-      session[:board_id] = board.id
-      redirect_to mypage_path
-    else
-      render 'boards/login'
-    end
+    board = Board.find_or_create_from_auth(request.env['omniauth.auth'])
+    session[:board_id] = board.id
+    redirect_to root_path
   end
 
   def destroy
-    session.delete(:board_name)
-    redirect_to boards_path
-  end
+    reset_session
+    redirect_to root_path
+  end 
 end

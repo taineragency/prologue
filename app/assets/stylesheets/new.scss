@@ -50,12 +50,12 @@ body{
 	padding: 0 10%;
 	text-align: center;
 }
-.form-group{
+.board-m .form-group{
 	width: calc(100% - 10%);
 	padding: 0 5%;
 	margin-bottom: 15px;
 }
-.form-group label{
+.board-m .form-group label{
 	display:block;
 	width: 426px;
 	text-align: left;
@@ -64,17 +64,17 @@ body{
 	color: #787878;
 	margin:0 auto 15px;
 }
-.form-control{
+.board-m .form-control{
 	height: 62px;
 	width: 420px;
 	border:2px solid #E9E9E9;
 	border-radius: 10px;
 }
-.form-control:last{
+.board-m .form-control:last{
 	height: 320px;
 	width: 80%;
 }
-.btn-primary{
+.board-m .btn-primary{
 	height: 80px;
 	width: 520px;
 	background-color: #FD9D78;

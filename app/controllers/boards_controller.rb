@@ -3,6 +3,7 @@ class BoardsController < ApplicationController
 
   def index 
   	@boards = Board.order("RAND()").limit(14)
+  	#@boards = Board.find(session[:board_id])
   end
 
   def new
@@ -45,6 +46,9 @@ class BoardsController < ApplicationController
   	@board.delete
 
   	redirect_to board_path, flash: { notice: "「#{board.name}」のページが削除されました"} 
+  end
+  
+  def login
   end
 
   private

@@ -6,7 +6,7 @@
     <div class="menu-bar-r">
         <a href="/boards/new" class="menu-bar-001">About</a>
         <a href="/boards/search" class="menu-bar-002">search</a>
-        <a href="#" class="menu-bar-003">How to</a>
+        <a href="/auth/twitter" class="menu-bar-003">How to</a>
         <div class="login-field">
         	<% if @current_user %>
         		<div class="me-icon"><img src="/assets/DSC48723@2x.png"></div>
@@ -30,7 +30,7 @@
 					<div class="shape1000"></div>
 			    </div>
 			    <div class="board-m">
-            	<%= form_for(:session, method: :post, url: login_path) do |f| %>
+            	<%= form_for(:session, method: :post, url: boards_login_path) do |f| %>
 			        <div class="form-group">
 			          <%= f.label :name, 'ユーザー名' %>
 			          <%= f.text_field :name, class: 'form-control' %>

@@ -267,7 +267,8 @@ ul.md-menu-bar li:last-child img{
 }
 .recommend001{
 	height: 40px;
-	width: 100%;
+	width: calc(100% - 20px);
+	margin: 0 10px;
 	color:#363637;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 16px;
@@ -280,8 +281,9 @@ ul.md-menu-bar li:last-child img{
 	opacity: 0.6;
 }
 .recommend002{
-	height: 180px;
-	width: 100%;
+	height: 200px;
+	width: calc(100% - 20px);
+	margin: 0 10px;
 	color:#787878;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 15px;
@@ -361,30 +363,13 @@ ul.md-menu-bar li:last-child img{
 	background-color: #FFF;
 	border-radius: 5px;
 }
-.fome-group .name-field{
-	line-height: 30px;
-	width: calc(100% - 10px);
-	padding: 9px 0;
-	margin: 0 5px;
-	border:none;
-	border-bottom: 2px solid #A5A5A5;
-	color:#787878;
-	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-	font-size: 16px;
-}
-.fome-group .comment-field{
-	height: 210px;
-	width: calc(100% - 10px);
-	padding: 20px 5px;
-	color:#787878;
-	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-	font-size: 16px;
-	border:none;
-}
 .form-group .btn-post{
 	height: 37px;
 	width: 37px;
 	background-image: url("/assets/DSC21788@2x.png")
+}
+.md-l .top-menu-bar{
+	display: none;
 }
 
 

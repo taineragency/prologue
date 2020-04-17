@@ -61,14 +61,27 @@
 	font-size: 22px;
 	padding-left: 30px;
 }
-.reg-list span .reg-prof{
+.reg-list .reg-prof{
 	display: block;
 	vertical-align: middle;
-	height: 120px;
-	width: calc(50% - 60px);
+	height: 100px;
+	width: calc(50% - 80px);
 	color: #464B5D;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 16px;
+	overflow: auto;
+	padding: 10px;
+}
+.reg-list .reg-prof.deco::-webkit-scrollbar {
+    width: 15px;
+}
+.reg-list .reg-prof.deco::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #f2f2f2;
+}
+.reg-list .reg-prof.deco::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background:#09C9D9;
 }
 .reg-paginate{
 	height: 150px;

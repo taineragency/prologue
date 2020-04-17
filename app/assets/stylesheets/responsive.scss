@@ -7,79 +7,6 @@
 @media all and (min-width: 670px) {
 
 
-  /*------------------------------index------------------------------*/
-  .drop-menu-inner span:hover::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-
-  .link-ab:hover p::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-  .link-ab:hover img{
-    transform: translateX(10px);
-  }
-  #service-wrapper:hover .service-frame .anim p::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-  #service-wrapper:hover .service-frame .anim img{
-    transform: translateX(10px);
-  }
-
-  .liver-frame:hover .liver-link p::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-
-  .liver-frame:hover .liver-link img{
-    transform: translateX(10px);
-  }
-
-  .staff-frame-l-inner:hover .staff-link p::after {
-    transform-origin: left top;
-    transform: scale(1, 1);
-  }
-  .staff-frame-l-inner:hover .staff-link img{
-    transform: translateX(10px);
-  }
-  .md-sns .btn:hover{
-    font-size: 1.4em;
-  }
-
-
-  /*------------------------------member------------------------------*/
-  .prof-sns .btn:hover{
-    font-size: 1.4em;
-  }
-  .md-slide-l:hover img{
-    transform: translateX(-10px);
-  }
-
-  .md-slide-r:hover img{
-    transform: translateX(10px);
-  }
-  .member-return-sp:hover img{
-    transform: translateX(-10px);
-  }
-
-
-  /*------------------------------reserve------------------------------*/
-  .reserve-return:hover img{
-    transform: translateX(-10px);
-  }
-
-
-  /*------------------------------entry------------------------------*/
-  .entry-return:hover img{
-    transform: translateX(-10px);
-  }
-
-  .entry-f-return:hover img{
-    transform: translateX(-10px);
-  }
-
 }
 
 /* スマホ向けレイアウト */
@@ -87,7 +14,7 @@
 
   /*header*/
 .front{
-  height: 3550px;
+  height: 3600px;
 }
 .main-catch{
   position: relative;
@@ -118,6 +45,7 @@
   justify-content: center;
   flex-wrap: wrap;
   float: left;
+  text-align: left;
 }
 .menu-bar-menu{
   display: block;
@@ -137,7 +65,7 @@
   height: 34px;
 }
 .menu-bar-r{
-  height: 240px;
+  height: 270px;
   width: calc(96% - 4px);
   padding: 30px 10px 10px 10px;
   display: flex;
@@ -179,33 +107,34 @@
   position: absolute;
   top: 80px;
   right: 0;
-    height: 196px;
-    width: 220px;
-    background: #FFF;
+  left: 0;
+  height: 196px;
+  width: 100%;
+  background: #1D1D1D;
 }
 .dropdown ul{
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 220px;
-  text-align: center;
+  width: 100%;
+  text-align: left;
   vertical-align: center;
 }
 .dropdown ul li {
   height: 64px;
-  width: 210px;
+  width: calc(100% - 10px);
   margin: 0 5px;
-  border-bottom:2px solid #618DD8;
+  border-bottom:2px solid #FFFFFF;
 }
 .dropdown ul li:last-child{
   border:none;
 }
 .dropdown ul li .my-dropdown-item,.dropdown span{
   height: 64px;
-  width: 200px;
+  width:calc(100% - 10px);
   margin: 0 5px;
   text-decoration: none;
-  color: #464B5D;
+  color: #FFF;
   font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
   font-size: 16px;
 }
@@ -503,7 +432,7 @@ a.twitter-login{
 }
 .ov-board{
   position: absolute;
-  top: 2900px;
+  top: 2950px;
   height: 640px;
   width: calc(100% - 15%);
   padding: 0 0 0 0;
@@ -557,7 +486,7 @@ a.twitter-login{
   top: 1050px;
   left: 0;
   right: 0;
-  height: 1846px;
+  height: 1896px;
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -618,7 +547,7 @@ a.twitter-login{
 .s-join{
   position: relative;
   height: 185px;
-  width: 126px;
+  width: calc(50% - 40px);
   margin:0px 20px 30px;
   text-align: center;
 }
@@ -659,12 +588,12 @@ a.twitter-login{
 
 /*footer*/
 footer{
-  height: 173px;
+  height: 132px;
   width: 100%;
 }
 .footer-frame{
   position:relative;
-  height: 173px;
+  height: 132px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -687,9 +616,9 @@ footer{
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 35px;
+  height: 58px;
   width: 260px;
-  padding: 94px 20px;
+  padding: 37px 20px;
 }
 .copyright a{
   color:#8A8A8A;
@@ -866,12 +795,12 @@ footer{
   width: calc(100% - 10%);
   padding: 0 5%;
 }
-.form-group{
+.board-m .form-group{
   width: calc(100% - 0);
   padding: 0;
   margin-bottom: 15px;
 }
-.form-group label{
+.board-m .form-group label{
   display:block;
   width: 100%;
   text-align: left;
@@ -880,17 +809,17 @@ footer{
   color: #787878;
   margin-bottom: 10px;
 }
-.form-control{
+.board-m .form-group .form-control{
   height: 43px;
   width: 316px;
   border:2px solid #E9E9E9;
   border-radius: 10px;
 }
-.form-control:last{
+.board-m .form-group .form-control:last{
   height: 320px;
   width: 80%;
 }
-.btn-primary{
+.board-m .btn-primary{
   height: 47px;
   width: 320px;
   background-color: #FD9D78;
@@ -1022,7 +951,7 @@ footer{
   width: 100%;
 }
 .md-prof-a{
-  height: 96px;
+  height: 95px;
   width: calc(100% - 20px);
   padding: 20px 10px;
   display: flex;
@@ -1041,33 +970,33 @@ footer{
 }
 .edit-link{
   position: absolute;
-  top: 150px;
+  top: 86px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 40px;
-  width: 180px;
+  height: 20px;
+  width: 150px;
   background-color: #618DD8;
   border-radius: 10px;
   color:#FFF;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 20px;
   font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }
 .edit-link p{
 
 }
 .md-name{
-  height: 90px;
+  height: 70px;
   width: calc(100% - 240px);
-  padding: 45px 20px;
+  padding: 20px 20px 0;
 }
 .md-name h2{
   color:636363;
   font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 36px;
+  font-size: 18px;
   height: 40px;
   margin-bottom: 20px;
 }
@@ -1091,21 +1020,17 @@ footer{
   padding: 20px 0;
 }
 .shape300{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 112px;
-  width: 200px;
-  background : radial-gradient(#618DD8 15%, transparent 20%);
-  opacity: 0.4;
-  background-size:12px 12px;
+  height: 56px;
+  width: 100px;
 }
 .md-profile{
   position: absolute;
-  top: 30px;
-  left: 50px;
+  top: 15px;
+  left: 0;
   height: 150px;
-  width: 80%;
+  width:  calc(100% - 40px);
+  margin: 0 20px;
+  padding-left: 0px;
 }
 .md-profile h2{
   color: #131314;
@@ -1130,8 +1055,8 @@ footer{
   position: absolute;
   top: 596px;
   left: 0;
-  height: 997px;
   width: 100%;
+  display: inline-block;
 }
 .md-r-inner{
   position: relative;
@@ -1140,10 +1065,12 @@ footer{
 }
 .md-r-line{
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   height: 58px;
-  width: 100%;
+  width:98%;
   background-color: #F29B75;
 }
 .md-r-line p{
@@ -1162,25 +1089,6 @@ footer{
   height: calc(100vh - 318px);
   width: calc(100% - 10px);
   padding: 30px 5px;
-}
-.recommend001{
-  height: 40px;
-  width: 100%;
-  color:#363637;
-  font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  border:none;
-  border-bottom:2px solid #A5A5A5;
-}
-.recommend002{
-  height: 200px;
-  width: 100%;
-  color:#787878;
-  font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 15px;
-  border:none;
-  resize: none;
 }
 .btn-recommend{
   position: absolute;
@@ -1209,65 +1117,183 @@ footer{
   width: 80px;
   margin: 0 auto;
   display: block;
+  display: none;
 }
 .markup{
   position: absolute;
-  bottom: 140px;
-  right: 20px;
-  height: 320px;
-  width: 320px;
-  background-color: #E9E9E9;
-  border-radius: 10px;
-  display: none;
-  -webkit-filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-    -moz-filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-    -ms-filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  height: 154px;
+  width: 92%;
+  margin: 0 auto;
+  display: block;
 }
 .markup:after{
-  position: absolute;
-  right: 40%;
-  border-width: 20px 10px 0 10px;
-  bottom: -10px;
-  width: 0px;
-  height: 0px;
-  content: "";
-  border-style: solid;
-  border-color: #e9e9e9 transparent transparent transparent;        
+  display: none;    
 }
 .markup-inner{
-  position: relative;
-  height: 300px;
-  width: 300px;
-  margin: 10px;
-  background-color: #FFF;
-  border-radius: 5px;
+  height: 134px;
+  width: calc(100% - 20px);
+  margin: auto;
+  display: block;
 }
-.fome-group .name-field{
-  line-height: 30px;
+.recommend001{
+  height: 40px;
   width: calc(100% - 10px);
-  padding: 9px 0;
   margin: 0 5px;
-  border:none;
-  border-bottom: 2px solid #A5A5A5;
-  color:#787878;
+  color:#363637;
   font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
   font-size: 16px;
+  border:none;
+  border-bottom:2px solid #A5A5A5;
+  outline: 0;
 }
-.fome-group .comment-field{
-  height: 210px;
+::placeholder{
+  color:#787878;
+  opacity: 0.6;
+}
+.recommend002{
+  height: 84px;
   width: calc(100% - 10px);
-  padding: 20px 5px;
   color:#787878;
   font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
+  padding: 0 5px;
   border:none;
+  resize: none;
+  outline: 0;
 }
-.form-group .btn-post{
+.counter-box{
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  height: 24px;
+  width: 50px;
+  margin-left:0; 
+  display: inline-block;
+}
+#counter{
+  font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color:#787878;
+}
+.btn-recommend{
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  background-color: #F29B75;
+  /*
+  background-image: url("/assets/DSC21788@2x.png");
+  background-size:37px 37px;
+  */
+  border-radius: 50%;
   height: 37px;
   width: 37px;
-  background-image: url("/assets/DSC21788@2x.png")
+  color:#FFF;
+  border:none;
 }
+
+.md-l .top-menu-bar{
+  display: block;
+}
+
+
+/*------------------------ edit -----------------------------*/
+.edit-frame{
+  position: relative;
+  height: 100vh;
+}
+.edit-l{
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 105px;
+  width: 100%;
+  background-color: #618DD8;
+}
+.edit-l .top-menu-bar{
+  display: block;
+}
+.edit-r{
+  position: absolute;
+  top: 105px;
+  left: 0;
+  height: 1200px;
+  width: 100%;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.edit-prof-a{
+  height: 140px;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+}
+.edit-icon{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.edit-icon img{
+  height: 100px;
+  width: 100px;
+}
+.edit-prof-b{
+  width: calc(100% - 20px);
+  padding: 0 10px;
+}
+.form-group label.edit-form-name{
+  font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  font-size: 18px;
+  color: #131314;
+  font-weight: bold;
+  display: inline-block;
+}
+.input-area{
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin: 0 auto;
+}
+.input-area .form-group input{
+  width: 100%;
+}
+.profile-area{
+  height: 320px;
+  width: 100%;
+  border-radius: 10px;
+  border:2px solid #E9E9E9;
+  resize: none;
+}
+.update-area{
+  height: 127px;
+  width: 100%;
+  margin: 60px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-update{
+  height: 47px;
+  width: 334px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.cancel{
+  display: inline-block;
+  line-height: 40px;
+  width: 160px;
+  font-size: 18px;
+  margin-right: 0px;
+}
+
+
 
 
 

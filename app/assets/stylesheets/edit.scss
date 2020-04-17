@@ -49,12 +49,24 @@
 	font-size: 20px;
 	color: #131314;
 	font-weight: bold;
-	display: inline-block;
+	display: block;
+	margin-bottom: 10px;
 }
 .input-area{
 	width: calc(100% - 20%);
 	margin-right: 20%;
 	margin-bottom: 50px;
+}
+.input-area .form-group{
+  margin-bottom: 30px;
+}
+.input-area .form-group input{
+ 	height: 54px;
+	width: 482px;
+	display: block;
+	border-radius: 10px;
+	border:2px solid #E9E9E9;
+	resize: none;
 }
 .profile-area{
 	height: 320px;
@@ -65,9 +77,9 @@
 }
 .update-area{
 	height: 80px;
-	width: calc(100% - 20%);
-	margin: 60px 0;
-	padding: 0 10%;
+	width: calc(100% - 10%);
+	margin: 40px 0;
+	padding: 0 5%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -78,6 +90,7 @@
 	background-color: #FD9D78;
 	color: #FFF;
 	border-radius: 10px;
+	margin-right: 40px;
 	border:none;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 20px;
@@ -96,13 +109,15 @@
 	color:#FFF;
 	font-family: "Noto Sans CJK JP",Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
 	font-size: 20px;
-	margin-right: 40px;
 	text-align: center;
 	text-decoration: none;
 	-webkit-filter:drop-shadow(5px 5px 10px rgba(156, 156, 156, 0.5));
     -moz-filter:drop-shadow(5px 5px 10px rgba(156, 156, 156, 0.5));
     -ms-filter:drop-shadow(5px 5px 10px rgba(156, 156, 156, 0.5));
     filter:drop-shadow(5px 5px 10px rgba(156, 156, 156, 0.5));
+}
+.edit-l .top-menu-bar{
+	display: none;
 }
 
 html, body, div, span, applet, object, iframe,
