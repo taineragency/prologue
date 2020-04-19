@@ -18,8 +18,5 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  pool: 5
+  database: db/production.postgresql
   url: <%= ENV['DATABASE_URL'] %>
-  database: d39hatduloc1gr
-  username: <%= ENV['RAILS_DATABASE_USER'] %>
-  password: <%= ENV['RAILS_DATABASE_PASSWORD'] %>
